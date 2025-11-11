@@ -18,6 +18,7 @@ let botao = document.getElementById("btnInserir");
 botao.addEventListener(`click`,()=>{
     let valor = document.getElementById('txtN0').value;
     let pessoa1 = new Pessoa(valor);
+    
 
     res.innerHTML = pessoa1.exibirNome();
     r2.textContent = nome;

@@ -1,0 +1,20 @@
+body{
+    background-image: url(https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?_gl=1*1qygp5g*_ga*NTg0ODk4MjU3LjE3NTk0MTE5NzQ.*_ga_8JE65Q40S6*czE3NTk0MTE5NzMkbzEkZzEkdDE3NTk0MTIwNzgkajU3JGwwJGgw);    
+    font-family: sans-serif;
+
+}
+.caixa{
+    width: 180px;
+    height: 120px;
+    background-color: white;
+}
+header{
+    display: flex;
+    /* padding-left: 30px; */
+    color: rgb(0, 255, 21);
+}
+label{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --rosa-claro: #ff88fd;
+    --verde-agua: #2cf6b3;
+    --lilas-bombom: #8332ac;
+    --beje-nude:#fedc97;
+    --vermelho-cereja: #eb5160;
+}
+header{
+    width: 100vw;
+    height: 12vh;
+    /* background-color: var(--verde-agua); */
+    background: linear-gradient(350deg, var(--vermelho-cereja),var(--lilas-bombom));
+    padding: 100px;
+}
+body{
+    background-color: var(--beje-nude);
+}

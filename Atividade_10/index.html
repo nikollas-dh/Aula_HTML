@@ -1,20 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Minha página web</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portal da Árvore-Mãe — Floresta Ancestral</title>
+
+  <!-- Fonte rúnica: Uncial Antiqua (Google Fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<header>
-        <h2>
-            MENU
-        </h2>    
-    </header>
 <body>
-    
-    <label for="">Nome:
-       <input type="text" id="nome" placeholder="Digite seu nome:" required>
-    </label>  
+  <!-- Áudio ambiente (autoplay pode ser bloqueado por browsers;
+       há um botão Play/Pause abaixo para ativar manualmente) -->
+  <audio id="bgAudio" loop>
+    <!-- Troque a src abaixo por uma música sem direitos (Pixabay/Bensound/etc) -->
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_6f0b1a8a8c.mp3?filename=magical-forest-ambient-11220.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <div class="container">
+    <header>
+      <h1>Portal da Árvore-Mãe</h1>
+      <p class="subtitle">Sussurre o verdadeiro nome do Espírito do Bosque — com coração puro.</p>
+    </header>
+
+    <main>
+      <form id="druidForm" class="druid-form" onsubmit="return false;">
+        <label for="druidNameInput">Sussurre o nome:</label>
+        <input id="druidNameInput" type="text" placeholder="Ex.: Veridian" autocomplete="off" />
+        <div class="controls">
+          <button id="awakenButton" type="button">Tocar o Selo Rúnico</button>
+          <button id="audioToggle" type="button" class="small">Play / Pause Música</button>
+        </div>
+      </form>
+
+      <div id="forestResponse" class="forest-response" aria-live="polite"></div>
+
+      <footer class="credits">
+        <small>Feito por um aprendiz do Círculo Esmeralda — toque o selo para despertar a magia.</small>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Script -->
+  <script src="js/script.js" defer></script>
 </body>
 </html>
